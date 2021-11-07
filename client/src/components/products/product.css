@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin-top: 50px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .cart-button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 2px 2px 4px black;
+      background-color: #26a0da;
+      padding: 5px;
+      border: 0;
+      border-radius: 25px;
+      color: white;
+      width: 50%;
+  }
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-image: linear-gradient(#f1f1f1, white);
+    height: 550px;
+}
+
+.prod-image{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.prod-image:hover{
+    position: relative;
+    object-fit:fill;
+    transform: scale(1.5);
+    z-index: 2;
+    transition: 1s ease-in-out;
+}
+.star{
+    position:relative;
+    top: -48px;
+    background-color: black;
+    opacity: 0.5;
+    margin-bottom: -48px;
+}
+.t-shadow{
+    text-shadow: 2px 2px 4px black;
+}
+.prod-title{
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.title-div{
+    height: 40px;
+}
+.prod-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    font-weight: 300;
+ }
+
+.desc-div{
+    height: 100px;
+}
+
+.flex{
+    display: flex;
+    justify-content:space-evenly;
+}
+      
+  /* Responsive columns */
+
+  @media screen and (max-width: 920px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  

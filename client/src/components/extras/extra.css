@@ -1,0 +1,13 @@
+.no-more{
+    background-color: goldenrod;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 50px;
+    position: absolute;
+    bottom: -1px;
+}
+.no-more-text{
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
